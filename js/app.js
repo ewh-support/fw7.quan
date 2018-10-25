@@ -67,4 +67,10 @@ $$('#my-login-screen .login-button').on('click', function () {
   // Alert username and password
   app.dialog.alert('Username: ' + username + '<br>Password: ' + password);
 });
+var list_col = $$(".list-col");
+$$(list_col).each(function(index){
+    if(($$(this).children(".number-col").length) > 1 && ($$(this).children(".number-col").length) <=2){
+        $$(this).children(".number-col").removeClass('col-100').addClass('col-50');
+    }
+});
 
