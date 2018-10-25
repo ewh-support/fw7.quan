@@ -285,13 +285,26 @@
                                         <div class="block-question">
                                             Câu 7: Trại nuôi tôm của bạn ở huyện, tỉnh nào?
                                         </div>
-                                        <div class="item-input-wrap input-dropdown-wrap">
-                                            <select name="province" placeholder="Please choose..." class="input-with-value pdl-15 fs-14">
-                                                <option value="">Hồ Chí Minh</option>
-                                                <option value="">Hà Nội</option>
-                                                <option value="">Đà Nẵng</option>
-                                                <option value="">Thanh Hóa</option>
-                                            </select>
+                                        <div class="row">
+                                            <div class="col-50">
+                                                <div class="item-input-wrap input-dropdown-wrap">
+                                                    <select name="tinh" placeholder="Please choose..." class="input-with-value pdl-15 fs-14">
+                                                        <option value="0" disabled selected>Chọn Tỉnh</option>
+                                                        <option value="">Tiền Giang</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-50">
+                                                <div class="item-input-wrap input-dropdown-wrap">
+                                                    <select name="huyen" placeholder="Please choose..." class="input-with-value pdl-15 fs-14">
+                                                        <option value="0" disabled selected>Chọn Huyện</option>
+                                                        <option value="">Cái Bè</option>
+                                                        <option value="">Cai Lậy</option>
+                                                        <option value="">Châu Thành</option>
+                                                        <option value="">Chợ Gạo</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
@@ -469,6 +482,11 @@
         
         .item-inner-1 {
             margin: 15px 0px;
+            width: 100%;
+        }
+        
+        .md .list .item-content {
+            padding-right: 16px;
         }
     </style>
     <!-- Cordova -->
