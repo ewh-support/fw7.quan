@@ -92,8 +92,11 @@ $$('.convert-form-to-data').on('click', function(){
     let baseUrl = 'http://159.65.133.13:4500/api/UserQuizzes';
     axios.post(baseUrl, formData).then(res =>{
         console.log(res);
+        alert("Submit thành công");
+
     }).catch(err =>{
         console.log(err);
+        alert("Submit không thành công");
     })
     console.log(JSON.stringify(formData));
     // alert(JSON.stringify(formData));
